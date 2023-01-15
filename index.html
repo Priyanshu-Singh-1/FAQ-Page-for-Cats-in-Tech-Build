@@ -4,21 +4,27 @@
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined" rel="stylesheet" />
     <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <link rel="stylesheet" href="style.css">
     <title>Cats in Tech Guild FAQ</title>
     <!-- <link rel="icon" type="image/x-icon" href="./favicon.ico"> -->
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
     <style>
         /* CSS for styling the FAQ page */
+        *{
+                margin: 0;
+                padding: 0;
+        }
         body {
                 background-color: #05010d;
                 font-family: 'Lato', sans-serif;
-                width: 80%;
+                width: 100%;
                 padding: 50px;
                 margin: 0 auto;
         }
 
         .faq-section {
                 max-width: 760px;
+                width: 100%;
                 margin: 0 auto;
                 display: none;
         }
@@ -802,22 +808,50 @@
                 </details>
                 
               </div>
+              <br><br><br><br>
+              <footer class="footer" id="footer">
+                <div class="waves">
+                  <div class="wave" id="wave1"></div>
+                  <div class="wave" id="wave2"></div>
+                  <div class="wave" id="wave3"></div>
+                  <div class="wave" id="wave4"></div>
+                </div>
+                <ul class="social-icon">
+                        <li class="social-icon__item"><a class="social-icon__link" href="https://github.com/Priyanshu-Singh-1">
+                                <ion-icon name="logo-github"></ion-icon>
+                          </a></li>
+                        <li class="social-icon__item"><a class="social-icon__link" href="https://www.linkedin.com/in/sublime-priyanshu/">
+                                <ion-icon name="logo-linkedin"></ion-icon>
+                        </a></li>
+                </ul>
+                <ul class="menu">
+                  <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
+                  <li class="menu__item"><a class="menu__link" href="https://priyanshu-singh-1.github.io/Priyanshu-Singh-Portfolio/">Portfolio</a></li>
+                  <li class="menu__item"><a class="menu__link" href="mailto:priyanshu4vitchennai@gmail.com">E-Mail</a></li>
+                  <li class="menu__item"><a class="menu__link" href="https://github.com/Priyanshu-Singh-1">GitHub</a></li>
+            
+                </ul>
+                <p>&copy; 2023 Priyanshu Singh | Made with ❤  </p>
+              </footer>
+              <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+              <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
               <script>
                 // JavaScript code to hide the preloader after the page has finished loading
                 // Select the preloader animation
                 var loader = document.getElementById('tower');
                 var faq = document.getElementById('faq-section');
-                // faq.style.display = 'none';     
+                var footer = document.getElementById('footer');
+                // faq.style.display = 'none';  
+                // footer.style.display = 'none';   
 
                 window.addEventListener ("load", function() {
                 //Hide the spinner after 2 seconds
                 setTimeout(function(){
                         loader.style.display = 'none';
                         faq.style.display = 'block';
+                        footer.style.display = 'flex';
                 }, 3000);
-                
-
                 });
               </script>
   </body>
